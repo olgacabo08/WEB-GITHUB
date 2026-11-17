@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Blog de Tecnología</title>
-  <meta name="description" content="Artículos, tutoriales y novedades sobre desarrollo web y software.">
+  <title>Mi Blog de Tecnología - ASIR</title>
+  <meta name="description" content="Recursos, documentación oficial y estándares sobre desarrollo web y XML.">
   
-  <!-- Etiqueta clave para que navegadores y lectores RSS detecten el feed automáticamente -->
-  <link rel="alternate" type="application/rss+xml" title="Mi Blog de Tecnología - RSS" href="https://www.ejemplo.com/feed.xml">
+  <!-- Autodescubrimiento con ruta relativa -->
+  <link rel="alternate" type="application/rss+xml" title="Mi Blog de Tecnología - RSS" href="feed.xml">
 
   <style>
     :root {
@@ -77,6 +77,7 @@
     }
     article h2 a:hover {
       color: var(--accent);
+      text-decoration: underline;
     }
     time {
       display: block;
@@ -99,11 +100,11 @@
 
   <header>
     <div>
-      <h1>Mi Blog de Tecnología</h1>
-      <p>Artículos, tutoriales y novedades sobre desarrollo web y software.</p>
+      <h1>Mi Blog de Tecnología - ASIR</h1>
+      <p>Recursos, documentación oficial y estándares sobre desarrollo web y XML.</p>
     </div>
-    <!-- Enlace visible al archivo feed.xml -->
-    <a href="/feed.xml" class="rss-btn" title="Suscribirse vía RSS">
+    <!-- Ruta relativa sin barra inicial para que abra tu feed.xml en GitHub Pages -->
+    <a href="feed.xml" class="rss-btn" title="Ver archivo feed.xml">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
         <path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1Z"/>
       </svg>
@@ -112,23 +113,23 @@
   </header>
 
   <main>
-    <!-- Primer artículo (coincide con el primer <item> del XML) -->
+    <!-- Primera noticia con enlace real -->
     <article>
-      <h2><a href="https://www.ejemplo.com/blog/crear-archivo-rss">Cómo crear tu primer archivo RSS</a></h2>
-      <time datetime="2026-11-17T07:30:00+01:00">17 de noviembre de 2026</time>
-      <p>En este tutorial aprenderás la estructura básica de un feed XML y cómo implementarlo en tu web paso a paso.</p>
+      <h2><a href="https://developer.mozilla.org/es/docs/Web/XML/XML_introduction" target="_blank" rel="noopener">Introducción oficial a XML en MDN Web Docs</a></h2>
+      <time datetime="2026-11-17T08:30:00+01:00">17 de noviembre de 2026</time>
+      <p>Guía completa de Mozilla sobre qué es XML, cómo funciona su sintaxis y en qué se diferencia de HTML.</p>
     </article>
 
-    <!-- Segundo artículo (coincide con el segundo <item> del XML) -->
+    <!-- Segunda noticia con enlace real -->
     <article>
-      <h2><a href="https://www.ejemplo.com/blog/novedades-web-2026">Novedades en desarrollo web para 2026</a></h2>
+      <h2><a href="https://validator.w3.org/feed/docs/rss2.html" target="_blank" rel="noopener">Especificación oficial de RSS 2.0 (W3C)</a></h2>
       <time datetime="2026-11-10T14:15:00+01:00">10 de noviembre de 2026</time>
-      <p>Repasamos las herramientas y estándares que están marcando tendencia este año.</p>
+      <p>Documentación técnica oficial con todas las etiquetas obligatorias y opcionales de un canal RSS.</p>
     </article>
   </main>
 
   <footer>
-    <p>© 2026 Mi Blog de Tecnología · <a href="/feed.xml">Suscribirse al Feed XML</a></p>
+    <p>© 2026 Mi Blog de Tecnología · <a href="feed.xml">Abrir archivo feed.xml</a></p>
   </footer>
 
 </body>

@@ -2,14 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mi Blog de Tecnología - ASIR</title>
-    <link>https://github.com</link>
+    <link>https://olgacabo08.github.io/WEB-GITHUB/</link>
     <description>Recursos, documentación oficial y estándares sobre desarrollo web y XML.</description>
     <language>es-es</language>
     <lastBuildDate>Tue, 17 Nov 2026 08:55:00 +0100</lastBuildDate>
     
-    <atom:link href="feed.xml" rel="self" type="application/rss+xml" />
+    <!-- URL completa exacta para pasar la validación sin advertencias -->
+    <atom:link href="https://olgacabo08.github.io/WEB-GITHUB/feed.xml" rel="self" type="application/rss+xml" />
 
-    <!-- Primera entrada con enlace real a MDN -->
+    <!-- Primera entrada -->
     <item>
       <title>Introducción oficial a XML en MDN Web Docs</title>
       <link>https://developer.mozilla.org/es/docs/Web/XML/XML_introduction</link>
@@ -18,7 +19,7 @@
       <description><![CDATA[Guía completa de Mozilla sobre qué es XML, cómo funciona su sintaxis y en qué se diferencia de HTML.]]></description>
     </item>
 
-    <!-- Segunda entrada con enlace real al estándar RSS -->
+    <!-- Segunda entrada -->
     <item>
       <title>Especificación oficial de RSS 2.0 (W3C)</title>
       <link>https://validator.w3.org/feed/docs/rss2.html</link>

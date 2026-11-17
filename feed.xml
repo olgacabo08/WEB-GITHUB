@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <!-- Información principal del sitio o canal -->
+    <title>Mi Blog de Tecnología</title>
+    <link>https://www.ejemplo.com</link>
+    <description>Artículos, tutoriales y novedades sobre desarrollo web y software.</description>
+    <language>es-es</language>
+    <lastBuildDate>Tue, 17 Nov 2026 08:00:00 +0100</lastBuildDate>
+    
+    <!-- Enlace al propio archivo feed (recomendado para validación) -->
+    <atom:link href="https://www.ejemplo.com/feed.xml" rel="self" type="application/rss+xml" />
+
+    <!-- Primer artículo / entrada -->
+    <item>
+      <title>Cómo crear tu primer archivo RSS</title>
+      <link>https://www.ejemplo.com/blog/crear-archivo-rss</link>
+      <guid isPermaLink="true">https://www.ejemplo.com/blog/crear-archivo-rss</guid>
+      <pubDate>Tue, 17 Nov 2026 07:30:00 +0100</pubDate>
+      <description><![CDATA[En este tutorial aprenderás la estructura básica de un feed XML y cómo implementarlo en tu web paso a paso.]]></description>
+    </item>
+
+    <!-- Segundo artículo / entrada -->
+    <item>
+      <title>Novedades en desarrollo web para 2026</title>
+      <link>https://www.ejemplo.com/blog/novedades-web-2026</link>
+      <guid isPermaLink="true">https://www.ejemplo.com/blog/novedades-web-2026</guid>
+      <pubDate>Mon, 10 Nov 2026 14:15:00 +0100</pubDate>
+      <description><![CDATA[Repasamos las herramientas y estándares que están marcando tendencia este año.]]></description>
+    </item>
+
+  </channel>
+</rss>
